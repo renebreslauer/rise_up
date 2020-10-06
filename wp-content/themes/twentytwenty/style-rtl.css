@@ -1414,6 +1414,8 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 	margin: 0;
 }
 
+
+
 .site-logo img {
 	max-height: 6rem;
 	margin: 0 auto;
@@ -5641,6 +5643,10 @@ a.to-the-top > * {
 
 	.wp-custom-logo .header-titles {
 		align-items: center;
+	}
+
+	.custom-logo-link {
+		width: 300px;
 	}
 
 	/* HEADER NAVIGATION */

@@ -1,3 +1,8 @@
+<style>
+
+
+</style>
+
 <?php
 /**
  * Header file for the Twenty Twenty WordPress default theme.
@@ -57,7 +62,6 @@
 					<?php } ?>
 
 					<div class="header-titles">
-
 						<?php
 							// Site title or logo.
 							twentytwenty_site_logo();

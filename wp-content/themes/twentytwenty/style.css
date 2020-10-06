@@ -2436,6 +2436,7 @@ body:not(.singular) main > article:first-of-type {
 h1.entry-title,
 h2.entry-title {
 	margin: 0;
+	color: red;
 }
 
 .entry-title a {
@@ -5703,6 +5704,10 @@ a.to-the-top > * {
 
 	.wp-custom-logo .header-titles {
 		align-items: center;
+	}
+
+	.custom-logo-link {
+		width: 200px;
 	}
 
 	/* HEADER NAVIGATION */

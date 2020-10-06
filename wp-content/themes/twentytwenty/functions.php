@@ -176,7 +176,6 @@ require get_template_directory() . '/classes/class-twentytwenty-non-latin-langua
 
 // Custom CSS.
 require get_template_directory() . '/inc/custom-css.php';
-
 /**
  * Register and Enqueue Styles.
  */
@@ -443,6 +442,17 @@ function twentytwenty_add_classic_editor_customizer_styles( $mce_init ) {
 }
 
 add_filter( 'tiny_mce_before_init', 'twentytwenty_add_classic_editor_customizer_styles' );
+
+
+function additional_stylesheets() {
+
+	wp_register_style( 'custom-styles', get_template_directory_uri().'/custom-styles.css'  );
+	wp_enqueue_style( 'custom-styles' );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'additional_stylesheets' );
+
 
 /**
  * Output non-latin font styles in the classic editor.
